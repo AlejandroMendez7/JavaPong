@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -26,6 +28,8 @@
       <artifactId>javafx-controls</artifactId>
       <version>21</version>
     </dependency>
+
+
   </dependencies>
 
   <build>
@@ -35,7 +39,7 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>0.0.8</version>
         <configuration>
-          <mainClass>com.tupackage.Main</mainClass>
+          <mainClass>alejandro.App</mainClass>
         </configuration>
       </plugin>
     </plugins>
