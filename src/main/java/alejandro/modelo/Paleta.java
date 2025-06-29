@@ -7,7 +7,7 @@ public class Paleta extends Dimension2D {
     private static final double WIDTH = 30;
     private static final double HEIGHT = 70;
     private Point2D posicion;
-    private Velocidad velocidad; // ver de usar solo un double -> Vel vertical
+    private double velocidadVertical; // ver de usar solo un double -> Vel vertical
 
     public Paleta(Point2D posicion) {
         super(WIDTH, HEIGHT);
@@ -18,9 +18,15 @@ public class Paleta extends Dimension2D {
         return posicion;
     }
 
-    public Velocidad getVelocidad() {
-        return velocidad;
+    public double getVelocidad() {
+        return velocidadVertical;
     }
 
-    // mover()
+    public void setVelocidad(double velocidadVertical) {
+        this.velocidadVertical = velocidadVertical;
+    }
+
+    public void setPosicion(Point2D posicion) {
+        this.posicion = posicion;
+    }
 }
