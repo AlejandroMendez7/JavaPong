@@ -1,5 +1,5 @@
 package alejandro.modelo;
 
-public enum EnumEstadoJuego {
+public enum EstadoJuego {
     INICIO, JUEGO, FIN
 }
