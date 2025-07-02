@@ -36,4 +36,8 @@ public class Pelota extends Dimension2D {
     public double getDireccion() {
         return direccion;
     }
+
+    public void setDireccion(double direccion) {
+        this.direccion = direccion;
+    }
 }
